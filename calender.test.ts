@@ -1,6 +1,5 @@
-import getMonth from "./getMonth";
-import getPast from "./getPast";
-import getYear from "./getYear";
+import { getMonth, getPast, getYear } from "./src";
+
 
 it("Past: Every week has 7 days", async () => {
     const past = await getPast(1997)

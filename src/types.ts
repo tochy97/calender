@@ -20,3 +20,4 @@ export type Month = {
 export type Past = Array<Month>
 
 export type PastPromise = Promise<Past>
+
