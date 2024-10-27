@@ -15,6 +15,8 @@ export type Month = {
     index: number,
     year: number,
     isLeap: boolean,
+    fnCallback?: Function,
+    ref?: any
 };
 
 export type Past = Array<Month>
