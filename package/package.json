@@ -1,0 +1,28 @@
+{
+  "name": "@egeonu/calender-calculate",
+  "author": "Tochy Egeonu",
+  "license": "ISC",
+  "version": "1.0.3",
+  "description": "Calculations for a calender",
+  "keywords": [
+    "calender",
+    "year"
+  ],
+  "main": "src/index.js",
+  "files": ["src/**/*"],
+  "directories": {
+    "src": "src"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "No Tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tochy97/calender.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tochy97/calender/issues"
+  },
+  "homepage": "https://github.com/tochy97/calender#readme"
+}
