@@ -2,13 +2,13 @@
   "name": "@egeonu/calender-calculate",
   "author": "Tochy Egeonu",
   "license": "ISC",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Calculations for a calender",
   "keywords": [
     "calender",
     "year"
   ],
-  "main": "src/index.js",
+  "main": "src/index",
   "files": ["src/**/*"],
   "directories": {
     "src": "src"
