@@ -9,12 +9,10 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
+  "dependencies": {
+    "@egeonu/calender-calculate": "^1.0.4",
     "@babel/preset-env": "^7.26.0",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0"
-  },
-  "dependencies": {
-    "@egeonu/calender-calculate": "^1.0.4"
   }
 }
