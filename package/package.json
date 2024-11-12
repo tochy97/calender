@@ -9,7 +9,9 @@
     "year"
   ],
   "main": "src/index",
-  "files": ["src/**/*"],
+  "files": [
+    "src/**/*"
+  ],
   "directories": {
     "src": "src"
   },
