@@ -13,7 +13,7 @@ import getWeek from './getWeek.js';
  */
 export default function getMonth(maxIndex, dayIndex, monthIndex, leap, yearIndex, stringDay) {
 
-    let stringMonth = monthsArray[monthIndex];
+    const stringMonth = monthsArray[monthIndex];
 
     const output = {
         weeks: [],
@@ -22,7 +22,6 @@ export default function getMonth(maxIndex, dayIndex, monthIndex, leap, yearIndex
         year: yearIndex,
         isLeap: leap
     };
-
 
     // Find index of 1st sunday for the month
     while (dayIndex > 1) {
