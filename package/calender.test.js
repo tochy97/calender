@@ -1,4 +1,4 @@
-import { getPast, getYear, getMonth } from "@egeonu/calender-calculate";
+import { getPast, getYear, getMonth } from "./src/index";
 
 it("Past: Every week has 7 days", async () => {
     const past = await getPast(1997)
