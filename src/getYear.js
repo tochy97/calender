@@ -11,12 +11,12 @@ import getMonth from './getMonth.js';
 export default function getYear(today) {
     const output = [];
 
-    let yearIndex = today.getFullYear();
+    const yearIndex = today.getFullYear();
     let monthIndex = today.getMonth();
     let dayIndex = today.getDate();
     const originalIndex = monthIndex;
     let monthInput;
-    let leap = isLeap(yearIndex);
+    const leap = isLeap(yearIndex);
     let maxIndex = monthMax(monthIndex, leap);
     let stringDay = daysArray[today.getDay()];
 
