@@ -17,5 +17,5 @@ jobs:
           node-version: 20
       - run: |
             npm ci
-            npx esline src
+            npx eslint src
             npm test
