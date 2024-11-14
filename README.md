@@ -11,7 +11,7 @@ Calculation function to build a calender object.
 A few examples of useful commands and/or tasks.
 
 ```
-import { getPast, getYear } from "./src/index";
+import { getPast, getYear } from "@egeonu/calender-calculate";
     const past = await getPast(1997)
 
     const date = new Date(2024, 10, 30);
