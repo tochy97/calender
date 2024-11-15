@@ -12,18 +12,21 @@ it("Past: Every week has 7 days", async () => {
     });
     expect(allSevens).toBe(true);
 });
+
 it("Year: 2024 starts on a Monday", () => {
     const date = new Date(2024, 10, 30);
     const year = getYear(date);
     const day = year[0].weeks[0].days.find((ele) => ele.index === 1)?.day;
     expect(day).toBe("Monday");
-})
+});
+
 it("Year: 1997 ends on a Wednesday", () => {
     const date = new Date(1997, 10, 30);
     const year = getYear(date);
     const day = year[0].weeks[0].days.find((ele) => ele.index === 1)?.day;
     expect(day).toBe("Wednesday");
-})
+});
+
 it("Month: No empty weeks", () => {
     const month = getMonth(31, 28, 7, false, 1997, "Monday");
     let emptyWeek = true;
@@ -39,4 +42,4 @@ it("Month: No empty weeks", () => {
         }
     });
     expect(month.weeks.length).toBe(notEmptyweeks);
-})
+});
