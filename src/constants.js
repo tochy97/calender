@@ -55,45 +55,19 @@ export const makeSunday = (value, day) => {
 }
 
 export const nextDay = (day) => {
-    switch (day) {
-        case "Monday":
-            return "Tuesday";
-        case "Tuesday":
-            return "Wednesday";
-        case "Wednesday":
-            return "Thursday"
-        case "Thursday":
-            return "Friday"
-        case "Friday":
-            return "Saturday"
-        case "Saturday":
-            return "Sunday"
-        case "Sunday":
-            return "Monday"
-        default:
-            return "";
-    }
+    let position = daysArray.indexOf(day) - 1;
+    if (position === -1) {
+        position = 0;
+    } 
+    return daysArray[position];
 }
 
-export const prevDay = (day) => {
-    switch (day) {
-        case "Monday":
-            return "Sunday";
-        case "Tuesday":
-            return "Monday";
-        case "Wednesday":
-            return "Tuesday"
-        case "Thursday":
-            return "Wednesday"
-        case "Friday":
-            return "Thursday"
-        case "Saturday":
-            return "Friday"
-        case "Sunday":
-            return "Saturday"
-        default:
-            return "";
-    }
+export const prevDay = (day) => {    
+    let position = daysArray.indexOf(day) - 1;
+    if (position === -1) {
+        position = 6;
+    } 
+    return daysArray[position];
 }
 
 export const monthMax = (month, leap) => {
