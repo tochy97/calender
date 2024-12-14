@@ -97,65 +97,21 @@ export const monthMax = (month, leap) => {
 }
 
 export const nextMonth = (month) => {
-    switch (month) {
-        case "January":
-            return "Febuary";
-        case "Febuary":
-            return "March";
-        case "March":
-            return "April";
-        case "April":
-            return "May";
-        case "May":
-            return "June";
-        case "June":
-            return "July";
-        case "July":
-            return "August";
-        case "August":
-            return "September";
-        case "September":
-            return "October";
-        case "October":
-            return "November";
-        case "November":
-            return "December";
-        case "December":
-            return "January";
-        default:
-            return "";
+    let position = monthsArray.indexOf(month) + 1;
+    if (position == -1)
+    {
+        position = 0;
     }
+    return monthsArray[position];
 }
 
 export const prevMonth = (month) => {
-    switch (month) {
-        case "January":
-            return "December";
-        case "Febuary":
-            return "January";
-        case "March":
-            return "Febuary";
-        case "April":
-            return "March";
-        case "May":
-            return "April";
-        case "June":
-            return "May";
-        case "July":
-            return "June";
-        case "August":
-            return "July";
-        case "September":
-            return "August";
-        case "October":
-            return "September";
-        case "November":
-            return "October";
-        case "December":
-            return "November";
-        default:
-            return "";
+    let position = monthsArray.indexOf(month) - 1;
+    if (position == -1)
+    {
+        position = 11;
     }
+    return monthsArray[position];
 }
 
 export const getMonthIndex = (month) => {
