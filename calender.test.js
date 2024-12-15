@@ -1,4 +1,4 @@
-import { getPast, getYear, getMonth } from "./src";
+import { getPast, getYear, getMonth } from "./lib/CalenderCalculate.js";
 
 it("Past: Every week has 7 days", async () => {
     const past = await getPast(1997)

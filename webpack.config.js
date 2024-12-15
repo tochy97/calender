@@ -6,11 +6,11 @@ const __dirname = dirname(__filename);
 
 export default {
   entry: {
-    CalenderCalculate: './src/index',
+    CalenderCalculate: ['./src/getYear', './src/getWeek', './src/getPast', './src/getMonth', './src/constants', './src/index'],
   },
   mode: "production",
   output: {
-    filename: 'CalenderCalculate.mjs',
+    filename: 'CalenderCalculate.js',
     path: path.resolve(__dirname, 'lib'),
     library: {
       type: "module",
@@ -20,6 +20,18 @@ export default {
   experiments: {
       outputModule: true
   },
-  plugins: [],
+  plugins: [],  
+	module: {
+		rules: [{
+			test: /\.?js$/,
+			exclude: /(node_modules)/,
+			use: {
+				loader: 'babel-loader',
+				options: {
+					presets: ['@babel/preset-env']
+				}
+			}
+		}]
+	},
   devtool: false,
 };
