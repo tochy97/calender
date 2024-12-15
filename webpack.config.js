@@ -11,6 +11,7 @@ export default {
   mode: "production",
   output: {
     filename: 'CalenderCalculate.js',
+    chunkFormat: "module",
     path: path.resolve(__dirname, 'lib'),
     library: {
       type: "module",
@@ -18,20 +19,21 @@ export default {
     clean: true
   },
   experiments: {
-      outputModule: true
+    outputModule: true
   },
-  plugins: [],  
-	module: {
-		rules: [{
-			test: /\.?js$/,
-			exclude: /(node_modules)/,
-			use: {
-				loader: 'babel-loader',
-				options: {
-					presets: ['@babel/preset-env']
-				}
-			}
-		}]
-	},
+  plugins: [],
+  module: {
+    rules: [{
+      test: /\.js$/,
+      exclude: /(node_modules)/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/preset-env']
+        }
+      }
+    }]
+  },
+  target: 'es5',
   devtool: false,
 };
