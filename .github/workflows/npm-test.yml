@@ -18,4 +18,5 @@ jobs:
       - run: |
             npm ci
             npx eslint src
+            npm run build
             npm test
