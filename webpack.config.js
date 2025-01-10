@@ -10,7 +10,7 @@ export default {
   },
   mode: "production",
   output: {
-    filename: 'CalenderCalculate.js',
+    filename: 'CalenderCalculate.mjs',
     chunkFormat: "module",
     path: path.resolve(__dirname, 'lib'),
     library: {
